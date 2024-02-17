@@ -47,7 +47,7 @@
         <h2 class="fw-semibold mb-5">
             Kontaktandmed
         </h2>
-        <form onsubmit="return next()" action="/views/insInfo.html">
+        <form action="/views/insInfo.html">
             <div class="col mx-2 fw-light">
                 <div class="row">
                     <div class="col">
@@ -55,7 +55,7 @@
                             Eesnimi
                             <div class="text-danger  fw-bold">*</div>
                         </label>
-                        <input type="text" name="firstName" required class="form-control mb-2 border-3 rounded-4" id="firstName" aria-label="firstName">
+                        <input type="text" name="firstName" required class="form-control mb-2 border-3 rounded-4" id="firstName" aria-label="firstName" placeholder="Väli on kohustuslik">
                     </div>
 
                     <div class="col">
@@ -63,7 +63,7 @@
                             Perekonnanimi
                             <div class="text-danger  fw-bold">*</div>
                         </label>
-                        <input type="text" name="lastName" required class="form-control mb-2 border-3 rounded-4" id="lastName" aria-label="lastName">
+                        <input type="text" name="lastName" required class="form-control mb-2 border-3 rounded-4" id="lastName" aria-label="lastName" placeholder="Väli on kohustuslik">
                     </div>
                 </div>
                 <div class="row">
@@ -72,7 +72,7 @@
                             E-mail
                             <div class="text-danger  fw-bold">*</div>
                         </label>
-                        <input type="email" name="email" required class="form-control mb-2 border-3 rounded-4" id="email" aria-label="email">
+                        <input type="email" name="email" required class="form-control mb-2 border-3 rounded-4" id="email" aria-label="email" placeholder="Väli on kohustuslik">
                     </div>
 
                     <div class="col">
@@ -99,7 +99,7 @@
                     Aadress
                     <div class="text-danger  fw-bold">*</div>
                 </label>
-                <input type="text" name="address" class="form-control mb-2 border-3 rounded-4" id="address" aria-label="address">
+                <input type="text" name="address" class="form-control mb-2 border-3 rounded-4" id="address" aria-label="address" placeholder="Väli on kohustuslik">
                 <label for="address2" class="form-label d-flex justify-content-start">
                     Aadress 2 (valikuline)
                 </label>
@@ -110,7 +110,7 @@
                             Linn
                             <div class="text-danger  fw-bold">*</div>
                         </label>
-                        <input type="text" name="city" required class="form-control mb-2 border-3 rounded-4" id="city" aria-label="city">
+                        <input type="text" name="city" required class="form-control mb-2 border-3 rounded-4" id="city" aria-label="city" placeholder="Väli on kohustuslik">
                     </div>
 
                     <div class="col">
@@ -118,7 +118,7 @@
                             Maakond
                             <div class="text-danger  fw-bold">*</div>
                         </label>
-                        <input type="text" name="state" required class="form-control mb-2 border-3 rounded-4" id="state" aria-label="state">
+                        <input type="text" name="state" required class="form-control mb-2 border-3 rounded-4" id="state" aria-label="state" placeholder="Väli on kohustuslik">
                     </div>
 
                     <div class="col">
@@ -126,25 +126,25 @@
                             Postiindeks
                             <div class="text-danger  fw-bold">*</div>
                         </label>
-                        <input type="text" name="postcode" required class="form-control mb-2 border-3 rounded-4" id="postcode" aria-label="postcode">
+                        <input type="text" name="postcode" required class="form-control mb-2 border-3 rounded-4" id="postcode" aria-label="postcode" placeholder="Väli on kohustuslik">
                     </div>
                 </div>
                 <label for="country" class="form-label d-flex justify-content-start">
                     Riik
                     <div class="text-danger  fw-bold">*</div>
                 </label>
-                <input type="text" name="country" required class="form-control mb-2 border-3 rounded-4" id="country" aria-label="country">
+                <input type="text" name="country" required class="form-control mb-2 border-3 rounded-4" id="country" aria-label="country" placeholder="Väli on kohustuslik">
                 <div id="business" hidden>
                     <label for="businessName" class="form-label d-flex justify-content-start">
                         Ettevõtte nimi
                         <div class="text-danger  fw-bold">*</div>
                     </label>
-                    <input type="text" name="businessName" class="form-control mb-2 border-3 rounded-4" id="businessName" aria-label="businessName">
+                    <input type="text" name="businessName" class="form-control mb-2 border-3 rounded-4" id="businessName" aria-label="businessName" placeholder="Väli on kohustuslik">
                     <label for="businessNr" class="form-label d-flex justify-content-start">
                         Ettevõtte reg. nr.
                         <div class="text-danger  fw-bold">*</div>
                     </label>
-                    <input type="text" name="businessNr" class="form-control mb-2 border-3 rounded-4" id="businessNr" aria-label="businessNr">
+                    <input type="text" name="businessNr" class="form-control mb-2 border-3 rounded-4" id="businessNr" aria-label="businessNr" placeholder="Väli on kohustuslik">
                 </div>
             </div>
             <h2 class="fw-semibold my-5">
@@ -155,19 +155,20 @@
                     <label for="addInfo" class="form-label d-flex justify-content-start">
                         Lisainfo (valikuline)
                     </label>
-                    <textarea name="addInfo" class="form-control mb-5 border-3 rounded-4" id="addInfo" aria-label="addInfo" style="width: 40vw;"></textarea>
+                    <textarea name="addInfo" class="form-control mb-5 border-3 rounded-4" id="addInfo" aria-label="addInfo" style="width: 40vw; max-height: 37vh;"></textarea>
                 </div>
-                <div class="justify-content-end me-2 text-center lh-lg" style="border: 0.5px solid #d9d9d9; background-color: #d9d9d9; width: 38vw;">
+                <div class="justify-content-end me-2 text-center" style="border: 0.5px solid #d9d9d9; background-color: #d9d9d9; width: 38vw; max-height: 40vh;">
                     <div class="mt-5 fs-4">    
                         kokkuvõte tellimusest
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-end gap-2 me-2 mt-4 mb-2">
+            <div class="d-flex justify-content-end me-2 mt-4 fs-4 fw-medium" style="color: #ff7171;">Vormis esines vigu</div>
+            <div class="d-flex justify-content-end gap-2 me-2 mt-2">
                 <button onclick="window.location.href='./indexErr.html'" class="btn shadow text-black fs-4 py-2 fw-semibold col-md-2 bg-white border-3" type="button" style="border-color: #38b47a;">
                     Tagasi
                 </button>
-                <button class="btn shadow text-white fs-4 py-2 fw-semibold col-md-2" type="submit" style="background-color: #38b47a;">
+                <button onclick="window.location.href='./ordered.html'" class="btn shadow text-white fs-4 py-2 fw-semibold col-md-2" type="submit" style="background-color: #38b47a;">
                     Jätka
                 </button>
             </div>
@@ -188,10 +189,6 @@
                 document.getElementById("businessNr").required = false;
             }
         });
-        function next() {
-            window.location.href = "./insInfoErr.html";
-            return false;
-        }
     </script>
 </body>
 </html>
