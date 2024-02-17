@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teenuste Paketid</title>
+    <link rel="icon" type="image/x-icon" href="../Favicon.png" />
+
+    <style>
+      /* Global styles */
+      html {
+        font-size: 16px;
+      }
+
+      body {
+        background: #ededed;
+        font-size: 18px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      /* Font sizes */
+      .rem {
+        font-size: 1.2rem;
+      }
+
+      .em {
+        font-size: 2em;
+      }
+
+      /* Counter styles */
+      @counter-style checkmark {
+        system: cyclic;
+        symbols: "\2705";
+        suffix: " ";
+      }
+
+      @counter-style cross {
+        system: cyclic;
+        symbols: "\274E";
+        suffix: " ";
+      }
+
+      /* List styles */
+      li {
+        text-align: left;
+        list-style-type: checkmark;
+        font-size: 1.85rem;
+      }
+
+      ol li {
+        list-style-type: cross;
+        text-decoration: line-through; /* Added to make the crossed-out items more noticeable */
+        color: #d9534f;
+      }
+
+      /* Package styles */
+      .paketid {
+        display: flex;
+        max-width: 900px;
+        margin: auto;
+        padding: 20px; /* Adjusted padding */
+      }
+
+      .pakett {
+        background: #fafafb;
+        border: 3px solid #b5f1c6;
+        flex: 1;
+        border-radius: 10px;
+        padding: 50px; /* Adjusted padding */
+        text-align: center;
+        margin-right: 5px;
+        margin-left: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .price {
+        font-weight: 900;
+        background-color: #f0ad4e; /* Yellow background for price tags */
+        padding: 10px; /* Adjusted padding */
+        border-radius: 5px; /* Added border-radius for rounded corners */
+        margin-bottom: 10px; /* Added margin-bottom for spacing */
+      }
+
+      /* Button style */
+      .button {
+        font-size: 2rem;
+        text-decoration: none; /* Removed underline */
+        padding: 10px 20px; /* Added padding */
+        background-color: #4caf50; /* Green background */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background-color: #45a049; /* Darker green on hover */
+      }
+
+      /* Heading and paragraph styles */
+      h3 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 2rem; /* Adjusted font size */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="paketid">
+      <div class="pakett starter">
+        <h3>Algaja Pakett</h3>
+        <div class="price">44 € kuus</div>
+        <!-- Updated price tag -->
+        <ul>
+          <li>16 GB andmemahtu</li>
+          <li>Privaatne postkast</li>
+          <ol>
+            <li>Tasuta toitlustus</li>
+          </ol>
+        </ul>
+        <br />
+        <a href="#" class="button">Telli kohe</a>
+      </div>
+      <div class="pakett business">
+        <h3>Äripakett</h3>
+        <div class="price">80 € kuus</div>
+        <!-- Updated price tag -->
+        <ul>
+          <li>24 GB andmemahtu</li>
+          <li>Privaatne postkast</li>
+          <li>Tasuta toitlustus</li>
+        </ul>
+        <br />
+        <a href="#" class="button">Telli kohe</a>
+      </div>
+    </div>
+  </body>
+</html>
